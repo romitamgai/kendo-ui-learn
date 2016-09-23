@@ -3,8 +3,23 @@
 <head>
 <meta charset="utf-8">
 	<title>Adding Kendo UI to a web page</title>
+
+	<link rel="stylesheet" type="text/css" href="content/kendo.common.min.css"/>
+	<link rel="stylesheet" type="text/css" href="content/kendo.default.min.css"/>
+
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/kendo.web.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#picDate").kendoDatePicker();
+		});
+	</script>
 </head>
 <body>
-
+	<span>
+		Pick a Date:
+		<input type="text" name="picDate" id="picDate"/>
+	</span>
 </body>
 </html>
